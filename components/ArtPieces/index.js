@@ -3,7 +3,7 @@ export function ArtPieces({ pieces }) {
   return (
     <ul>
       {pieces.map((artPiece) => (
-        <li key={artPiece.id}>
+        <li key={artPiece.slug}>
           {artPiece.imageSource},{artPiece.name}, {artPiece.artist}
         </li>
       ))}
