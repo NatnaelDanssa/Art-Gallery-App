@@ -4,7 +4,7 @@ export function ArtPieces({ pieces }) {
     <li>
       {pieces.map((artPiece) => (
         <li key={artPiece.id}>
-          {artPiece.id}, {artPiece.imageUrl}, {artPiece.title}
+          {artPiece.imageSource},{artPiece.name}, {artPiece.artist}
         </li>
       ))}
     </li>
