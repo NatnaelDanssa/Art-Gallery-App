@@ -1,12 +1,12 @@
 export function ArtPieces({ pieces }) {
   console.log("pieces", pieces);
   return (
-    <li>
+    <ul>
       {pieces.map((artPiece) => (
-        <li key={artPiece.id}>
-          {artPiece.id}, {artPiece.imageUrl}, {artPiece.title}
+        <li key={artPiece.slug}>
+          {artPiece.slug}, {artPiece.imageUrl}, {artPiece.title}
         </li>
       ))}
-    </li>
+    </ul>
   );
 }
