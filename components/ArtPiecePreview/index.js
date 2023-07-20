@@ -5,16 +5,19 @@ export function ArtPiecePreview({ image, title, artist }) {
   return (
     <article>
       <figure className={styles.Figure}>
-        <Image
-          src={image}
-          width={500}
-          height={500}
-          alt="Picture of the author"
-        />
-        <figcaption className={styles.Figcaption}>
-          <span aria-label="title">{title}</span>
-          <small aria-label="artist">{artist}</small>
-        </figcaption>
+        <div className={styles.ImgWrapper}>
+          <Image
+            src={image}
+            width={360}
+            height={360}
+            alt="Picture of the author"
+          />
+
+          <figcaption className={styles.Figcaption}>
+            <span aria-label="title">{title}</span>
+            <small aria-label="artist">{artist}</small>
+          </figcaption>
+        </div>
       </figure>
     </article>
   );

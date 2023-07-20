@@ -16,6 +16,7 @@ const StyledNavigation = styled.nav`
 export function Navigation() {
   return (
     <StyledNavigation>
+      <Link href="/">Home</Link>
       <Link href="/spotlight">Spotlight</Link>
       <Link href="/favourites">Favourites</Link>
     </StyledNavigation>
