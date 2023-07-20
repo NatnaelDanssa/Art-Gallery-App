@@ -9,7 +9,6 @@ export default function HomePage({ data, isLoading }) {
   return (
     <>
       <ArtPieces pieces={data}></ArtPieces>
-      <Navigation />
     </>
   );
 }
