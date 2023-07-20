@@ -12,8 +12,8 @@ export function ArtPiecePreview({ image, title, artist }) {
           alt="Picture of the author"
         />
         <figcaption className={styles.Figcaption}>
-          <span>{title}</span>
-          <small>{artist}</small>
+          <span aria-label="title">{title}</span>
+          <small aria-label="artist">{artist}</small>
         </figcaption>
       </figure>
     </article>
