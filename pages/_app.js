@@ -1,5 +1,5 @@
 import GlobalStyle from "../styles";
-
+import Layout from "@/components/Layout";
 import useSWR from "swr";
 export const URL = "https://example-apis.vercel.app/api/art";
 
@@ -10,7 +10,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
-      <Component {...pageProps} data={data} isLoading={isLoading} />
+      <Layout>
+        <Component {...pageProps} data={data} isLoading={isLoading} />
+      </Layout>
     </>
   );
 }
