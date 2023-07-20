@@ -1,4 +1,5 @@
 import { ArtPiecePreview } from "../ArtPiecePreview";
+
 export function ArtPieces({ pieces }) {
   console.log("pieces", pieces);
   return (

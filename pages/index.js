@@ -1,13 +1,15 @@
-import Link from "next/link";
 import { ArtPieces } from "@/components/ArtPieces";
+import { Navigation } from "@/components/Navigation";
 
-export default function HomePage({ data }) {
+export default function HomePage({ data, isLoading }) {
   console.log("data", data);
+  if (isLoading) {
+    return <h1>loading...</h1>;
+  }
   return (
     <>
-      {data && <ArtPieces pieces={data}></ArtPieces>}
-      <Link href="/spotlight">Spotlight</Link>
-      <Link href="/favourites">Favourites</Link>
+      <ArtPieces pieces={data}></ArtPieces>
+      <Navigation />
     </>
   );
 }
